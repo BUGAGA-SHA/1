@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Tinder Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <!-- Шапка -->
+    <header>
+        <img src="logo.png" class="logo" alt="Tinder Clone">
+        <div class="nav-icons">
+            <button id="profile-btn">👤</button>
+            <button id="matches-btn">💌</button>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <div class="container">
+        <div id="card-container"></div>
+        <div class="action-buttons">
+            <button class="dislike-btn">✖</button>
+            <button class="like-btn">❤</button>
+        </div>
+    </div>
+
+    <!-- Модальные окна -->
+    <div id="profile-modal" class="modal">
+        <!-- Содержимое модального окна профиля -->
+    </div>
+
+    <!-- Скрипты -->
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            initApp();
+        });
+    </script>
+</body>
+</html>
